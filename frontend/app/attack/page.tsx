@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import DDoSAttackPanel from '@/components/DDoSAttackPanel';
 
 export default function AttackPanel() {
   const [packetCount, setPacketCount] = useState(0);
@@ -330,6 +331,11 @@ export default function AttackPanel() {
         <div className="mt-6 text-center text-gray-500 text-sm">
           <p>Make sure backend is running on port 8000 (python main_ws.py)</p>
           <p>Dashboard should be open at localhost:3000/dashboard with capture started</p>
+        </div>
+        
+        {/* DDoS Attack Panel */}
+        <div className="mt-8">
+          <DDoSAttackPanel />
         </div>
       </div>
     </div>

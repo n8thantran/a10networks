@@ -33,6 +33,13 @@ export default function Home() {
             Attack Panel 🔥
           </Link>
           
+          <Link
+            href="/query"
+            className="inline-block px-8 py-4 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition-all transform hover:scale-105 ml-4"
+          >
+            Network Query 🔍
+          </Link>
+          
           <div className="text-sm text-zinc-600 mt-4">
             <p>Powered by AI-driven threat analysis</p>
           </div>
